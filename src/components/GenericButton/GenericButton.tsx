@@ -2,13 +2,13 @@ import { Button } from '@chakra-ui/react'
 import React from 'react'
 
 interface IClick {
-    title: string;
-    click: () => {}
+    children: string | JSX.Element | JSX.Element[];
+    click: () => void | {}
 }
 
-export const GenericButton = ({click, title} : IClick) => (
-    <Button onClick={click}>
-        {title}
+export const GenericButton = ({click, children} : IClick) => (
+    <Button onClick={click} size='sm' minWidth='35%' marginTop='5px' colorScheme='purple'>
+        {children}
     </Button>
 )
 

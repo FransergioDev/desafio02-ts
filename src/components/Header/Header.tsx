@@ -7,9 +7,9 @@ interface IHeader {
 
 export const Header = ({title}: IHeader) => {
   return(
-    <Center>
-      <Heading as='h2' size='4xl'>
-        <Text fontSize='5xl' color='#ffa500'>{title}</Text>
+    <Center backgroundColor='#a037d8'>
+      <Heading as='h2' size='4xl' padding='0.1em'>
+        <Text fontSize='5xl' color='#fffffe'>{title}</Text>
       </Heading>
     </Center>
   )
