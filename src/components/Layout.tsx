@@ -4,7 +4,7 @@ import { Header } from "./Header/Header"
 export const Layout = ({ children }: any) => {
   return(
     <>
-      <Header />
+      <Header title='DIO BANK'/>
       { children }
       <Footer />
     </>
